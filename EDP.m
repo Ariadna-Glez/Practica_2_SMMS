@@ -22,7 +22,9 @@ alpha = z(3);
 div = (Mc + Mp)*Ip + (Mc*Mp*Lp^2) + (Mp^2*Lp^2*sin(alpha)^2);
 
 dz(1) = z(2);
-dz(2) = ((Ip+Mp*Lp^2) + Fc + Mp^2 * Lp^2 * g * cos(alpha) * sin(alpha) - (Ip + Mp*Lp^2)*Beq * z(2) - (Ip * Mp * Lp - Mp^2*Lp^3)*z(4)^2*sin(alpha) - Mp * Lp * z(4) * cos(alpha) * Bp)/ div;
+dz(2) = (((Ip+Mp*Lp^2) * Fc + Mp^2 * Lp^2 * g * cos(alpha) * sin(alpha) - (Ip + Mp*Lp^2)*Beq * z(2) - (Ip * Mp * Lp - Mp^2*Lp^3)*z(4)^2*sin(alpha) - Mp * Lp * z(4) * cos(alpha) * Bp)/ div);
 dz(3) = z(4);
-dz(4) = ((Mc + Mp)*Mp*g*Lp*sin(alpha) - (Mc + Mp)*Bp * z(4) + (Fc*Mp*Lp*cos(alpha)) - Mp^2 * Lp^2 * z(4)^2 * sin(alpha) * cos(alpha) - Beq*Mp*Lp*z(2)*cos(alpha))/ div;
+dz(4) = (((Mc + Mp)*Mp*g*Lp*sin(alpha) - (Mc + Mp)*Bp * z(4) + (Fc*Mp*Lp*cos(alpha)) - Mp^2 * Lp^2 * z(4)^2 * sin(alpha) * cos(alpha) - Beq*Mp*Lp*z(2)*cos(alpha))/ div);
+
+
 
