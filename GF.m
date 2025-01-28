@@ -1,7 +1,8 @@
 vi = [0; 0; deg2rad(1); 0];
 
 [t , x] = ode45(@EDP, [0 10] , vi);
-
+figure(1)
+plot(t,x);
 figure('Position', [50, 50, 600, 500]);
 
 % pendulo
